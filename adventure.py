@@ -129,7 +129,7 @@ class GameEngine:
             print("You're not carrying anything.")
         else:
             for item in self.person.inventory:
-                print(f'\t{item}')
+                print(f'  {item}')
 
     def inventory_verb(self, action):
         self.inventory_verb_action(action)
