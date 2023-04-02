@@ -56,11 +56,11 @@ class GameEngine:
         self.person = person
 
     def display_room(self):
-        print('>', self.room['name'])
-        print(self.room['desc'])
+        print('>', self.room['name'] + '\n')
+        print(self.room['desc'] + '\n')
         if ('items' in self.room) and (len(self.room['items']) > 0):
             print('Items:', ' '.join(self.room['items']))
-        print('Exits:', ' '.join(list(self.room['exits'])))
+        print('Exits:', ' '.join(list(self.room['exits'])) + '\n')
 
     def multiple_ways_string(self, possible_values):
         sen = ''
