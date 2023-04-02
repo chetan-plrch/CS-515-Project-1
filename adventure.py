@@ -1,6 +1,7 @@
 import json
 import sys
 
+# All the verbs of the game
 verbs = {
     "go": 'go',
     "look": 'look',
@@ -10,6 +11,8 @@ verbs = {
     "quit": 'quit'
 }
 
+# Directions made dynamic by centralizing the data of all directions in direction_abbreviations dict. Change the key (
+# the abbreviation) and the direction name (the value - same as used in map file) and this game is good to go.
 direction_abbreviations = {
     "n": "north",
     "e": "east",
@@ -22,6 +25,7 @@ direction_abbreviations = {
 }
 
 
+# Player class to isolate and modularize player related state and behavior into one
 class Player:
     def __init__(self, name):
         self.inventory = []
@@ -37,6 +41,7 @@ class Player:
         return self.inventory
 
 
+# GameEngine class to isolate and modularize engine related state and actions/behaviours into one
 class GameEngine:
     def __init__(self):
         self.room = None
@@ -65,9 +70,12 @@ class GameEngine:
     def multiple_ways_string(self, possible_values):
         sen = ''
         for idx, v in enumerate(possible_values):
-            if idx == 0: sen += f'{v} '
-            elif idx == (len(possible_values) - 1): sen += f'or {v}'
-            else: sen += f', {v}'
+            if idx == 0:
+                sen += f'{v} '
+            elif idx == (len(possible_values) - 1):
+                sen += f'or {v}'
+            else:
+                sen += f', {v}'
         return sen + '?'
 
     def check_multiple_exit(self, action):
