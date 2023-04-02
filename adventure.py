@@ -59,7 +59,7 @@ class GameEngine:
         print('>', self.room['name'] + '\n')
         print(self.room['desc'] + '\n')
         if ('items' in self.room) and (len(self.room['items']) > 0):
-            print('Items:', ' '.join(self.room['items']) + '\n')
+            print('Items:', ', '.join(self.room['items']) + '\n')
         print('Exits:', ' '.join(list(self.room['exits'])) + '\n')
 
     def multiple_ways_string(self, possible_values):
