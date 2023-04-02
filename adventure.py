@@ -59,7 +59,7 @@ class GameEngine:
         print('>', self.room['name'] + '\n')
         print(self.room['desc'] + '\n')
         if ('items' in self.room) and (len(self.room['items']) > 0):
-            print('Items:', ' '.join(self.room['items']))
+            print('Items:', ' '.join(self.room['items']) + '\n')
         print('Exits:', ' '.join(list(self.room['exits'])) + '\n')
 
     def multiple_ways_string(self, possible_values):
@@ -92,12 +92,12 @@ class GameEngine:
             if len(multiple_exits) == 1:
                 room_id = self.room['exits'][action]
                 self.room = self.map[room_id]
-                print(f'You go {action}.')
+                print(f'You go {action}.' + '\n')
                 self.display_room()
             else:
                 print(f'Did you want to go', self.multiple_ways_string(multiple_exits))
         except KeyError as e:
-            print(f'There\'s no way to {action}.')
+            print(f'There\'s no way to go {action}.')
 
     def go_verb(self, action):
         self.go_verb_action(action)
@@ -106,10 +106,13 @@ class GameEngine:
         self.display_room()
 
     def get_verb(self, item):
-        if item in self.room['items']:
-            self.person.take_item(item)
-            self.room['items'].remove(item)
-            print(f'You pick up the {item}.')
+        if 'items' in self.room:
+            if item in self.room['items']:
+                self.person.take_item(item)
+                self.room['items'].remove(item)
+                print(f'You pick up the {item}.')
+            else:
+                print(f'There\'s no {item} anywhere.')
         else:
             print(f'There\'s no {item} anywhere.')
 
@@ -124,10 +127,10 @@ class GameEngine:
             print(f'There\'s no {item} with you.')
 
     def inventory_verb_action(self, action):
-        print('Inventory:')
         if len(self.person.inventory) == 0:
             print("You're not carrying anything.")
         else:
+            print('Inventory:')
             for item in self.person.inventory:
                 print(f'  {item}')
 
