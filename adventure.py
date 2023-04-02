@@ -56,11 +56,11 @@ class GameEngine:
         self.person = person
 
     def display_room(self):
-        print('>', self.room['name'], '\n')
-        print(self.room['desc'], '\n')
+        print('>', self.room['name'])
+        print(self.room['desc'])
         if ('items' in self.room) and (len(self.room['items']) > 0):
-            print('Items:', ' '.join(self.room['items']), '\n')
-        print('Exits:', ' '.join(list(self.room['exits'])), '\n')
+            print('Items:', ' '.join(self.room['items']))
+        print('Exits:', ' '.join(list(self.room['exits'])))
 
     def multiple_ways_string(self, possible_values):
         sen = ''
@@ -174,8 +174,7 @@ class GameEngine:
         skip = False
         cmd = input('What would you like to do? ')
         cmds = cmd.strip().split()
-        if len(cmds) > 2:
-            print('Command should be of 1-2 words')
+        if len(cmds) == 0 or len(cmds) > 2:
             skip = True
             return [verb, action, skip]
 
