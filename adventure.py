@@ -1,5 +1,6 @@
 import json
 import sys
+import re
 
 # All the verbs of the game
 verbs = {
@@ -184,7 +185,9 @@ class GameEngine:
         action = ''
         skip = False
         cmd = input('What would you like to do? ')
-        cmds = cmd.strip().split()
+        cmds = re.findall('(\S*)\s(.*)', re.sub(' +', ' ', cmd.strip().lower()))
+        cmds = list(cmds[0])
+
         if len(cmds) == 0 or len(cmds) > 2:
             skip = True
             return [verb, action, skip]
