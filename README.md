@@ -6,7 +6,7 @@ This repository contains the implementation of a game engine that loads and lets
 Name: Chetan Prakash Jain
 Stevens Login: cjain1@stevens.edu
 GitHub Repo: https://github.com/chetan-plrch/project-1
-Hours spent on the project: 5 hours for development + 6 hours of testing
+Hours spent on the project: 5 hours for development + 6 hours of testing + 2 hours on README.md
 ```
 
 ## Testing
@@ -282,7 +282,7 @@ You win the game!
 
 #### Where are they in the map:
 ```
-# This room contains the winning condition:
+# This room contains the losing condition:
 {
 		"name": "Whispering Library",
 		"desc": "You walk into an library that feels like it's straight out of a ghost story. Dusty bookcases line the walls, and a haunted wooden table occupies the center of the room. Ghostly armchairs are scattered around the room.",
