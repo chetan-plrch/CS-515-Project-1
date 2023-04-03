@@ -81,14 +81,19 @@ class GameEngine:
 
     def check_multiple_exit(self, action):
         possible_exits = []
-        multiple = [action]
+        multiple = []
         for ext in self.room['exits']:
             if ext.startswith(action):
                 possible_exits.append(ext)
 
         try:
             if possible_exits.index(action) >= 0:
+                multiple.append(action)
                 return multiple
+            elif len(possible_exits) > 1:
+                multiple.extend(possible_exits)
+                return multiple
+            return multiple
         except ValueError:
             if len(possible_exits) > 1:
                 multiple.extend(possible_exits)
@@ -103,8 +108,10 @@ class GameEngine:
                 self.room = self.map[room_id]
                 print(f'You go {action}.' + '\n')
                 self.display_room()
-            else:
+            elif len(multiple_exits) > 1:
                 print(f'Did you want to go', self.multiple_ways_string(multiple_exits))
+            else:
+                print(f'There\'s no way to go {action}.')
         except KeyError as e:
             print(f'There\'s no way to go {action}.')
 
