@@ -92,6 +92,18 @@ What would you like to do?
 
 #### Where are they in the map: (This extension doesn't require any change in the map file)
 
+### List of abbrevations
+```
+"n": "north",
+"e": "east",
+"w": "west",
+"s": "south",
+"ne": "northeast",
+"nw": "northwest",
+"se": "southeast",
+"sw": "southwest"
+```
+
 #### How to excerise this extension:
 ```
 > Mysterious Entrance
