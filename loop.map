@@ -1,81 +1,132 @@
 [
-  {
-    "name": "Mysterious Entrance",
-    "description": "You find yourself standing in front of a grand entrance with a broken gate and a black cat staring at you. The door is slightly open, inviting you to come inside. As you push it open, you feel a chill run down your spine.",
-    "items": ["cobweb", "dagger", "skeleton"],
-    "exits": { "north": 1, "northeast": 2 }
-  },
-  {
-    "name": "Dreadful Lounge",
-    "description": "The air is thick with an unidentifiable scent. The centerpiece of the room is a cursed couch, and a flickering chandelier providing minimal light",
-    "items": ["cursed-couch", "old-portrait", "poisoned-wine", "secret-book"],
-    "exits": { "south": 0, "north": 2, "northwest": 3 }
-  },
-  {
-    "name": "Haunted Bedroom",
-    "description": "You open the door to a haunted bedroom that looks like it's straight out of a horror movie. The queen-sized bed has tattered pillows and a skeleton on spikes. A wardrobe with  stands in the corner.",
-    "items": ["bloody-knife", "creepy-doll", "ouija-board", "spiderweb", "lamp"],
-    "exits": { "south": 1, "north": 3, "northeast": 5, southeast: 0 }
-  },
-  {
-    "name": "Blessed room",
-    "description": "You step into a room that feels different from the others, suddenly you are happy out of nowhere. It's bright and warm. The air smells of lavender. As you look around, you notice various religious symbols and artifacts placed throughout the room, such as a cross hanging on the wall and a Bible on the nightstand, it makes you feel at ease.",
-    "items": ["cross-of-jesus", "bible", "holy-water", "lamp"],
-    "exits": { "south": 2, "north": 4, "northwest": 7, southwest: 0 }
-  },
-  {
-    "name": "Abandoned Bathroom",
-    "description": "You walk into an abandoned bathroom that looks like it hasn't been used in years. The walls and floor are covered in mold, and a rusty bathtub makes your skin crawl. A broken toilet stands in the corner.",
-    "items": ["bloody-handprint", "foggy-mirror", "rusty-razor", "moldy-towels"],
-    "exits": { "south": 3, "north": 5, "northeast": 9, southeast: 2 }
-  },
-  {
-    "name": "Cursed Kitchen",
-    "description": "You enter a cursed kitchen that seems to have a mind of its own. Appliances turn on and off by themselves, and the central island seems to move around. A creepy dining table stands nearby.",
-    "items": ["haunted-knife", "possessed-blender", "maggoty-food", "spilled-sauce", "satanic-symbols"],
-    "exits": { "south": 4, "north": 6, "northwest": 10, southwest: 3 }
-  },
-  {
-    "name": "Possessed Study",
-    "description": "You step into a possessed study that seems to be haunted by an evil spirit. A demonic wooden desk occupies one corner of the room, and a cursed chair is pulled up to it. A dark floor lamp provides sinister lighting.",
-    "items": ["black-candle", "demonic-book", "cursed-pen", "creepy-painting", "voodoo-doll", "lamp"],
-    "exits": { "south": 5, "north": 7, "northwest": 6, southwest: 4 }
-  },
-  {
-    "name": "Whispering Library",
-    "description": "You walk into an eerie library that feels like it's straight out of a ghost story. Dusty bookcases line the walls, and a haunted wooden table occupies the center of the room. Ghostly armchairs are scattered around the room.",
-    "items": ["ancient-tome", "skeleton-key", "spell-book", "cursed-scroll", "ghostly-whispers"],
-    "exits": { "south": 6, "north": 8, "northeast": 8, southeast: 5 },
-    "lose_condition": {
-        "lose_prompt": "The library is big. You lost your way back and entered a very dark area, you can't see anything",
-        "lose_text": "You didn't have 'lamp' to find your way back!",
-        "escape_items": ["lamp"],
-        "escape_text": "You had a lamp! you found your way back to the entrance of library"
-    }
-  },
-  {
-    "name": "Creaky Gym",
-    "description": "You enter a creepy gym that seems to be haunted by the ghosts of previous gym-goers. Rusty exercise equipment lines the walls, and a ghostly mirror covers one entire wall. An old water cooler stands in the corner.",
-    "items": ["blood-stained-towel", "haunted-weight", "possessed-jump-rope", "creepy-mannequin", "spooky-protein-powder"],
-    "exits": { "south": 7, "north": 9, "northwest": 6, southwest: 5 },
-  },
-  {
-    "name": "Haunted Playroom",
-    "description": "You step into a haunted playroom that feels like it's designed for kids, but something",
-    "items": ["Ouija-board", "old-rocking-horse", "eerie-music-box", "sinister-puppets"],
-    "exits": { "south": 8, "north": 10, "northeast": 7, southeast: 4 },
-  },
-  {
-    "name": "Terrifying Exit",
-    "description": "The exit of the house, placed in the right corner a tombstone with your name on it. Graveyard visible from it's window's, and a door leading outside to the graveyard.",
-    "items": ["tombstone"],
-    "win_Condition": {
-        "win_prompt": "A ghost appears in front of the exit door. You are scared to hell!",
-        "win_items": ["cross-of-jesus"],
-        "win_text": "You scared the ghost away with the 'cross-of-jesus' you picked and exit the ghost house, you win!",
-        "no_win_text": "You don't have the 'cross-of-jesus' to scare the ghost away! Search for it in the house!",
-        "optional_description": "For the player to win, they need to have 'cross-of-jesus' when they land into this room"
-    },
-    "exits": { "south": 9, "northwest": 9, southwest: 0 },
-  }
+    {
+		"name": "Mysterious Entrance",
+		"desc": "You find yourself standing in front of a grand entrance with a broken gate and a black cat staring at you. The door is slightly open, inviting you to come inside. As you push it open, you feel a chill run down your spine.",
+		"items": ["cobweb", "dagger", "skeleton"],
+		"exits": {
+			"north": 1,
+			"northeast": 2
+		}
+	},
+	{
+		"name": "Dreadful Lounge",
+		"desc": "The air is thick with an unidentifiable scent. The centerpiece of the room is a cursed couch, and a flickering chandelier providing minimal light",
+		"items": ["cursed couch", "old portrait", "poisoned wine", "secret book"],
+		"exits": {
+			"south": 0,
+			"north": 2,
+			"northwest": 3
+		}
+	},
+	{
+		"name": "Haunted Bedroom",
+		"desc": "You open the door to a haunted bedroom that looks like it's straight out of a horror movie. The queen-sized bed has tattered pillows and a skeleton on spikes. A wardrobe with stands in the corner.",
+		"items": ["bloody knife", "creepy doll", "ouija board", "spiderweb", "lamp"],
+		"exits": {
+			"south": 1,
+			"north": 3,
+			"northeast": 5,
+			"southeast": 0
+		}
+	},
+	{
+		"name": "Blessed room",
+		"desc": "You step into a room that feels different from the others, suddenly you are happy out of nowhere. It's bright and warm. The air smells of lavender. As you look around, you notice various religious symbols and artifacts placed throughout the room, such as a cross hanging on the wall and a Bible on the nightstand, it makes you feel at ease.",
+		"items": ["cross of jesus", "bible", "holy water", "lamp"],
+		"exits": {
+			"south": 2,
+			"north": 4,
+			"northwest": 7,
+			"southwest": 0
+		}
+	},
+	{
+		"name": "Abandoned Bathroom",
+		"desc": "You walk into an abandoned bathroom that looks like it hasn't been used in years. The walls and floor are covered in mold, and a rusty bathtub makes your skin crawl. A broken toilet stands in the corner.",
+		"items": ["bloody handprint", "foggy mirror", "rusty razor", "moldy towels"],
+		"exits": {
+			"south": 3,
+			"north": 5,
+			"northeast": 9,
+			"southeast": 2
+		}
+	},
+	{
+		"name": "Cursed Kitchen",
+		"desc": "You enter a cursed kitchen that seems to have a mind of its own. Appliances turn on and off by themselves, and the central island seems to move around. A creepy dining table stands nearby.",
+		"items": ["haunted knife", "possessed blender", "maggoty food", "spilled sauce", "satanic symbols"],
+		"exits": {
+			"south": 4,
+			"north": 6,
+			"northwest": 10,
+			"southwest": 3
+		}
+	},
+	{
+		"name": "Possessed Study",
+		"desc": "You step into a possessed study that seems to be haunted by an evil spirit. A demonic wooden desk occupies one corner of the room, and a cursed chair is pulled up to it. A dark floor lamp provides sinister lighting.",
+		"items": ["black candle", "demonic book", "cursed pen", "creepy painting", "voodoo doll", "lamp"],
+		"exits": {
+			"south": 5,
+			"north": 7,
+			"northwest": 6,
+			"southwest": 4
+		}
+	},
+	{
+		"name": "Whispering Library",
+		"desc": "You walk into an library that feels like it's straight out of a ghost story. Dusty bookcases line the walls, and a haunted wooden table occupies the center of the room. Ghostly armchairs are scattered around the room.",
+		"items": ["ancient tome", "skeleton key", "spell book", "cursed scroll", "ghostly whispers"],
+		"exits": {
+			"south": 6,
+			"north": 8,
+			"northeast": 8,
+			"southeast": 5
+		},
+		"lose_condition": {
+			"lose_prompt": "The library is big. You lost your way back and entered a very dark area, you can't see anything now",
+			"lose_text": "You didn't have 'lamp' to find your way back, You die because of fear of darkness!",
+			"escape_items": ["lamp"],
+			"escape_text": "Thankfully you had a lamp! you found your way back to the entrance of library"
+		}
+	},
+	{
+		"name": "Creaky Gym",
+		"desc": "You enter a creepy gym that seems to be haunted by the ghosts of previous gym-goers. Rusty exercise equipment lines the walls, and a ghostly mirror covers one entire wall. An old water cooler stands in the corner.",
+		"items": ["blood stained towel", "haunted weight", "possessed jump rope", "creepy mannequin", "spooky protein powder"],
+		"exits": {
+			"south": 7,
+			"north": 9,
+			"northwest": 6,
+			"southwest": 5
+		}
+	},
+	{
+		"name": "Haunted Playroom",
+		"desc": "You step into a haunted playroom that feels like it's designed for kids, but something",
+		"items": ["ouija board", "old rocking horse", "music box", "sinister puppets"],
+		"exits": {
+			"south": 8,
+			"north": 10,
+			"northeast": 7,
+			"southeast": 4
+		}
+	},
+	{
+		"name": "Terrifying Exit",
+		"desc": "The exit of the house, placed in the right corner a tombstone with your name on it. Graveyard visible from it's window's, and a door leading outside to the graveyard.",
+		"items": ["tombstone"],
+		"win_condition": {
+			"win_prompt": "A ghost appears in front of the exit door. You are scared to hell!",
+			"win_items": ["cross of jesus"],
+			"win_text": "You scared the ghost away with the 'cross of jesus' you picked and exited the ghost house, you win!",
+			"no_win_text": "You don't have the 'cross of jesus' to scare the ghost away! Search for it in the house to exit/win!",
+			"optional_description": "For the player to win, they need to have 'cross of jesus' when they land into this room"
+		},
+		"exits": {
+			"south": 9,
+			"northwest": 9,
+			"southwest": 0
+		}
+	}
 ]
