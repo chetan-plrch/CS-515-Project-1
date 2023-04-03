@@ -411,6 +411,101 @@ You lost the game!
 
 ```
 
+#### How to exercise escape condition:
+```
+> Mysterious Entrance
+
+You find yourself standing in front of a grand entrance with a broken gate and a black cat staring at you. The door is slightly open, inviting you to come inside. As you push it open, you feel a chill run down your spine.
+
+Items: cobweb, dagger, skeleton
+
+Exits: north northeast
+
+What would you like to do? go north
+You go north.
+
+> Dreadful Lounge
+
+The air is thick with an unidentifiable scent. The centerpiece of the room is a cursed couch, and a flickering chandelier providing minimal light
+
+Items: cursed couch, old portrait, poisoned wine, secret book
+
+Exits: south north northwest
+
+What would you like to do? go north
+You go north.
+
+> Haunted Bedroom
+
+You open the door to a haunted bedroom that looks like it's straight out of a horror movie. The queen-sized bed has tattered pillows and a skeleton on spikes. A wardrobe with stands in the corner.
+
+Items: bloody knife, creepy doll, ouija board, spiderweb, lamp
+
+Exits: south north northeast southeast
+
+What would you like to do? go north
+You go north.
+
+> Blessed room
+
+You step into a room that feels different from the others, suddenly you are happy out of nowhere. It's bright and warm. The air smells of lavender. As you look around, you notice various religious symbols and artifacts placed throughout the room, such as a cross hanging on the wall and a Bible on the nightstand, it makes you feel at ease.
+
+Items: cross of jesus, bible, holy water, lamp
+
+Exits: south north northwest southwest
+
+What would you like to do? get lamp
+You pick up the lamp.
+What would you like to do? go north
+You go north.
+
+> Abandoned Bathroom
+
+You walk into an abandoned bathroom that looks like it hasn't been used in years. The walls and floor are covered in mold, and a rusty bathtub makes your skin crawl. A broken toilet stands in the corner.
+
+Items: bloody handprint, foggy mirror, rusty razor, moldy towels
+
+Exits: south north northeast southeast
+
+What would you like to do? go north
+You go north.
+
+> Cursed Kitchen
+
+You enter a cursed kitchen that seems to have a mind of its own. Appliances turn on and off by themselves, and the central island seems to move around. A creepy dining table stands nearby.
+
+Items: haunted knife, possessed blender, maggoty food, spilled sauce, satanic symbols
+
+Exits: south north northwest southwest
+
+What would you like to do? go north
+You go north.
+
+> Possessed Study
+
+You step into a possessed study that seems to be haunted by an evil spirit. A demonic wooden desk occupies one corner of the room, and a cursed chair is pulled up to it. A dark floor lamp provides sinister lighting.
+
+Items: black candle, demonic book, cursed pen, creepy painting, voodoo doll, lamp
+
+Exits: south north northwest southwest
+
+What would you like to do? go north
+You go north.
+
+> Whispering Library
+
+You walk into an library that feels like it's straight out of a ghost story. Dusty bookcases line the walls, and a haunted wooden table occupies the center of the room. Ghostly armchairs are scattered around the room.
+
+Items: ancient tome, skeleton key, spell book, cursed scroll, ghostly whispers
+
+Exits: south north northeast southeast
+
+The library is big. You lost your way back and entered a very dark area, you can't see anything now
+
+Thankfully you had a lamp! you found your way back to the entrance of library
+What would you like to do? 
+```
+
 ## Running the Game
 To run the game, navigate to the base directory of the cloned repository and run python3 adventure.py [map name]. 
 The game can be run using any of the map files in the repository.
