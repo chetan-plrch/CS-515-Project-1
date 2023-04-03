@@ -185,24 +185,24 @@ class GameEngine:
         action = ''
         skip = False
         cmd = input('What would you like to do? ')
-        cmds = re.findall('(\S*)\s(.*)', re.sub(' +', ' ', cmd.strip().lower()))
-        cmds = list(cmds[0])
+        cmds = re.sub(' +', ' ', cmd.strip().lower()).split()
 
-        if len(cmds) == 0 or len(cmds) > 2:
+        if len(cmds) == 0:
             skip = True
             return [verb, action, skip]
 
         if len(cmds) == 1:
-            [vb] = cmds
+            vb = cmds[0]
             verb = vb.lower()
         else:
-            [vb, atn] = cmds
+            vb = cmds[0]
+            atn = ' '.join(cmds[1:])
             verb = vb.lower()
             action = atn.lower()
 
         all_verbs = list(verbs) + list(direction_abbreviations.keys())
         if verb not in all_verbs:
-            print('Incorrect verb')
+            print('Incorrect verb, Please try again!')
             skip = True
         elif verb == 'go':
             if action == '':
