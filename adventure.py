@@ -12,6 +12,8 @@ verbs = {
     "quit": 'quit'
 }
 
+# Didn't have time to write a permutation function to generate abbreviations
+# Currently the abbreviations list is hardcoded
 # Directions made dynamic by centralizing the data of all directions in direction_abbreviations dict. Change the key (
 # the abbreviation) and the direction name (the value - same as used in map file) and this game is good to go.
 direction_abbreviations = {
