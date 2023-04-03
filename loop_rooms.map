@@ -1,0 +1,38 @@
+[
+    {"name": "Entrance", "description": "The main entrance to the house with a coat closet and a bench for putting on shoes."},
+    {"name": "Living Room", "description": "A spacious room with comfortable sofas and a coffee table."},
+    {"name": "Bedroom", "description": "A cozy bedroom with a comfortable bed and a wardrobe for your clothes."},
+    {"name": "Bathroom", "description": "A clean and modern bathroom with a shower and a bathtub."},
+    {"name": "Kitchen", "description": "A well-equipped kitchen with modern appliances and a dining area."},
+    {"name": "Study", "description": "A quiet and well-lit study room with a desk and a comfortable chair."},
+    {"name": "Library", "description": "A cozy library with comfortable armchairs and bookcases filled with books."},
+    {"name": "Gym", "description": "A gym with exercise equipment and mirrors to help you stay in shape."},
+    {
+        "name": "Playroom", "description": "A fun and colorful playroom for adults with ps4, cards, board games, and a TV."
+        "items": ["charades", "monopoly", "ps4", "spin-the-bottle"]
+    },
+    {"name": "Exit", "description": "The main exit of the house with a door leading outside."}
+]
+
+    {"name": "Guest Room", "description": "A comfortable guest room with a queen-size bed and a dresser for storage."},
+    {"name": "Garden", "description": "A beautiful outdoor garden with a lawn, flowers, and a seating area for relaxation."},
+    {"name": "Garage", "description": "A spacious garage with enough room to park two cars and store your tools and equipment."},
+    {"name": "Dining Room", "description": "A formal dining room with a large table and elegant decor."},
+    {"name": "Patio", "description": "An outdoor patio with a grill, dining table, and lounge chairs for relaxing."},
+    {"name": "Home Office", "description": "A functional home office with a desk, chair, and bookshelves for your work."},
+
+    {"name": "Game Room", "description": "A game room with a pool table, dartboard, and a mini bar for drinks."},
+
+    {"name": "Home Theater", "description": "A home theater with a large screen, surround sound, and comfortable seating."},
+    {"name": "Wine Cellar", "description": "A wine cellar with temperature-controlled storage and a tasting area."},
+    {"name": "Sauna", "description": "A private sauna room with benches and a steam generator for relaxation."},
+    {"name": "Spa", "description": "A home spa with a massage table, hot tub, and a sauna for ultimate relaxation."},
+    {"name": "Craft Room", "description": "A craft room with a large work table and storage for your supplies."},
+    {"name": "Laundry Room", "description": "A laundry room with a washer, dryer, and a folding table for your laundry needs."},
+    {"name": "Mud Room", "description": "A mud room with hooks and storage for your outdoor gear and shoes."},
+    {"name": "Attic", "description": "A spacious attic with plenty of storage space and potential for a playroom or home office."},
+    {"name": "Basement", "description": "A finished basement with a TV, game console, and a bar for entertaining."},
+    {"name": "Balcony", "description": "An outdoor balcony with a stunning view and seating for relaxation."},
+    {"name": "Foyer", "description": "A grand foyer with a chandelier and a seating area for welcoming guests."},
+    {"name": "Exit", "description": "The main exit of the house with a door leading outside."}
+]

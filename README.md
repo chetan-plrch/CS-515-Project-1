@@ -5,7 +5,7 @@ This repository contains the implementation of a game engine that loads and lets
 ```
 Name: Chetan Prakash Jain
 Stevens Login: cjain1@stevens.edu
-GitHub Repo: https://github.com/chetan-plrch/project-1
+GitHub Repo: https://github.com/chetan-plrch/CS-515-Project-1
 Hours spent on the project: 5 hours for development + 6 hours of testing + 2 hours on README.md
 ```
 
