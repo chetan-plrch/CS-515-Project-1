@@ -233,10 +233,10 @@ class GameEngine:
                     lost = self.check_lose_condition()
 
                     if won:
-                        print('You win the game!')
+                        print('\nYou win the game!\n')
                         self.continue_game = False
                     elif lost:
-                        print('You lost the game!')
+                        print('\nYou lost the game!\n')
                         self.continue_game = False
                 elif verb == verbs['look']:
                     self.look_verb(action)
